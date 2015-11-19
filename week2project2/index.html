@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script>
+
+      var choiceOne = prompt('Enter A Name');
+      var choiceTwo = prompt('Enter Another Name');
+
+      var compare = function(thingOne,thingTwo){
+        if(thingOne.length === thingTwo.length){
+          alert("They are the same length");
+        }else if(thingOne.length > thingTwo.length){
+          alert( thingOne + ' is the longer name');
+        }else{
+          alert( thingTwo + ' is the longer name');
+        }
+      }
+
+      choiceTwo = "Banana";
+
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <button class="button" onclick="compare(choiceOne, choiceTwo);">Return Longer Name</button>
+    </div>
+  </body>
+
+</html>
